@@ -10,7 +10,7 @@ import foodRouter from './routers/food.router.js';
 import userRouter from './routers/user.router.js';
 import orderRouter from './routers/order.router.js';
 import uploadRouter from './routers/upload.router.js';
-import paystackRouter from './routers/paystack.router.js'; // Paystack route
+// import paystackRouter from './routers/paystack.router.js'; // Paystack route
 import { dbconnect } from './config/database.config.js';
 
 dbconnect();
@@ -29,7 +29,7 @@ app.use('/api/foods', foodRouter);
 app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
 app.use('/api/upload', uploadRouter);
-app.use('/api/paystack', paystackRouter); // Paystack payment verification
+// app.use('/api/paystack', paystackRouter); // Paystack payment verification
 
 // ❌ Remove frontend serving (no public/index.html needed on Render)
 
